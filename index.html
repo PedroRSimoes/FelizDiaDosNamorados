@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>120625</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>FELIZ DIA DOS NAMORADOS</h1>
+    </header>
+    <main>
+        <div class="gallery">
+            <div class="photo" onclick="showModal('foto1.jpg', 'Imagem 1', 'Essa é uma bela foto de um pôr do sol.')">
+                <img src="foto1.jpg" alt="Foto 1" class="thumbnail">
+            </div>
+            <div class="photo" onclick="showModal('foto2.jpg', 'Imagem 2', 'Paisagem montanhosa incrível.')">
+                <img src="foto2.jpg" alt="Foto 2" class="thumbnail">
+            </div>
+            <div class="photo" onclick="showModal('foto3.jpg', 'Imagem 3', 'Praia paradisíaca.')">
+                <img src="foto3.jpg" alt="Foto 3" class="thumbnail">
+            </div>
+            <div class="photo" onclick="showModal('foto4.jpg', 'Imagem 4', 'Noite estrelada maravilhosa.')">
+                <img src="foto4.jpg" alt="Foto 4" class="thumbnail">
+            </div>
+            <!-- Adicione mais imagens conforme necessário -->
+        </div>
+    </main>
+
+    <!-- Modal para exibição da imagem ampliada -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modal-img" src="" alt="">
+            <h2 id="modal-title"></h2>
+            <p id="modal-desc"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
